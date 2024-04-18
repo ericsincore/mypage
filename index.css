@@ -1,0 +1,106 @@
+body {
+  background-color: #ffffff;
+  background-image: url("eagle.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: FloralWhite;
+  text-align: center;
+  border-style: none;
+  margin: 0px 0px 0px 0px;
+  padding: 10px;
+  font-family: Copperplate, Verdana, Georgia;
+  font-size: 2.5vw;
+  color: black;
+  letter-spacing: 7px;
+}
+
+
+ul.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width:100%;
+}
+
+li.menu {
+  float: left;
+}
+
+li.right {
+	float: right;
+}
+
+li.menu a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.menu a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: DarkRed;
+}
+
+ul.submenu {
+  list-style-type: none;
+  margin: 10px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width:58%;
+}
+
+li.submenu {
+  float: left;
+  border-right: 1px solid FloralWhite;
+}
+
+li:last-child {
+	border-right: none;
+}
+
+li.submenu a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.submenu a:hover {
+  background-color: #111;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: FloralWhite;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 12px 16px;
+	z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
