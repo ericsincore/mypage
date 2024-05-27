@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Salary/Benefits</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="This is a website about Web Devleopment Education, Skills, and Training">
+		<meta name="keywords" content="Career, IT, Web Development, Website, Digital Design">
+		<meta name="author" content="Eric Sincore">
+		<meta name="viewport" content="width=devide-width, intial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="SincoreEricStylesheet.css">
+	</head>
+	<body>
+		<img src="images/web_development.jpg" alt="See though screen of web development" style="width:100%;height:173px;" class="center">
+		<ul class="menu">
+			<li class="menu"><a href="SincoreEricHomePage.html">Home</a></li>
+			<li class="menu"><a href="education.html">Education/Skills</a></li>
+			<li class= "menu active"><a href="salary.html">Salary/Benefits</a></li>
+			<li class= "menu"><a href="references.html">References</a></li>
+		</ul>
+		<h1 onmouseover="style.color='red'"
+		onmouseout="style.color='black'">Salary/Benefits</h1>
+		<hr>
+		<div class="row">
+			<div class="columnmain">
+				<h2>Salary</h2>
+		
+				<div onmouseover="mOver(this)" onmouseout="mOut(this)"
+				style="background-color:#ff6100;width:80px;height:10px;padding:30px;" class= "center">Work Hard</div>
+		
+				<script>
+				function mOver(obj) {
+					obj.innerHTML = "Make Money!"
+				}
+		
+				function mOut(obj) {
+					obj.innerHTML = "Work Hard"
+				}
+				</script>
+		
+				<p>According to,<a href="https://www.bls.gov/ooh/computer-and-information-technology/web-developers.htm#tab-5" target="_blank"> Occupational Outlook Handbook: Pay </a>, the median annual wage for a web developer in 2023 was $84,960. The range of pay is quite large, with the bottom 10% earning $46,850 while on the other end the high 10% earned $157,280. Web and digital interface designers on the other hand made slightly more, averaging $98,540.</p>
+				<hr>
+				<div class="columnhalf">
+					<table>
+				<caption><span class="boldtext">Web and Digital Interface Designers, top industries</span> <br><br></caption>
+					<tr>
+						<th>Industry</th>
+						<th>Salary</th>
+					</tr>
+					<tr>
+						<td>Finance and Insurance</td>
+						<td>$121,190</td>
+					</tr>
+					<tr>
+						<td>Computer Systems Design and Related Services</td>
+						<td>$105,950</td>
+					</tr>
+					<tr>
+						<td>Advertising, Public Relations, and Related Services</td>
+						<td>$71,930</td>
+					</tr>
+					<tr>
+						<td>Retail Trade</td>
+						<td>$66,250</td>
+					</tr>
+				</table>
+				</div>
+				<div class="columnhalf">
+				<table>
+				<caption><span class="boldtext">Web Devlopers, top industries</span> <br><br><br></caption>
+					<tr>
+						<th>Industry</th>
+						<th>Salary</th>
+					</tr>
+					<tr>
+						<td>Software publishers</td>
+						<td>$126,480</td>
+					</tr>
+					<tr>
+						<td>Management, Scientific, and Technical Consulting Services</td>
+						<td>$83,790</td>
+					</tr>
+					<tr>
+						<td>Computer System Design and Related Services</td>
+						<td>$81,480</td>
+					</tr>
+					<tr>
+						<td>Educational Services;state, local, and private</td>
+						<td>$77,840</td>
+					</tr>
+				</table>
+				<br>
+				</div>
+				<hr>
+				<h2>Benefits</h2>
+				<p>The benefits of working in the web development industry will vary on personal interests and needs. This career allows for remote working, beneficial to those who prefer not going into the office. Projects will vary and prevent the work from becoming mundane, allowing for more personal satisfaction. Some employers will pay for additional education. Working for corporations will provide imporant benefits such as health, dental, and potentially company cars,phones, or computers.
+			</div>
+			<div class="columnad">
+				<a href= "https://www.bls.gov/ooh/computer-and-information-technology/web-developers.htm#tab-2" target="_blank">
+					<img src="images/man_working.jpg" alt="man working at computer" style="width:277px;height:220px;" class="center border">
+				</a>
+				<br><br>
+				<a href= "https://www.bankofamerica.com/" target="_blank">
+					<img src="images/money.jpg" alt="dollar sign" style="width:277px;height:220px;" class="center border">
+				</a>
+				<br><br>
+				<img src="images/ad.jpg" alt="place your ad here" style="width:277px;height:220px;" class="center border">
+			</div>
+		</div>
+		<div class="footer">
+			<p>Website created by Eric Sincore</p>
+			<button type="button" class="center"
+		onclick="document.getElementById('time').innerHTML = Date()">
+		Current Date and Time.</button>
+		
+		<p id="time" class="center"></p>
+		</div>
+	</body>
+</html>

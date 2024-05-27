@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Golf</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="This is a website about Golf">
+		<meta name="keywords" content="Golf, Callaway, Clubs, Golf Cart, Tee">
+		<meta name="author" content="Eric Sincore">
+		<meta name="viewport" content="width=devide-width, intial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="SincoreEricStylesheet.css">
+	</head>
+	<body>
+		<ul class="menu">
+			<li class="menu"><a href="SincoreEricHomePage.html">Home</a></li>
+			<li class="menu"><a href="table.html">Club Selection</a></li>
+			<li class= "menu"><a href="about.html">About</a></li>
+			<li class= "menu active"><a href="form.html">Survey</a></li>
+		</ul>
+		
+		<form method= "post" action= "http://ss1.ciwcertified.com/cgi-bin/process.pl">
+		<fieldset>
+		Name:<br>
+		<input type="text" name="name"><br>
+		Email:<br>
+		<input type="text" name="email"><br>
+		</fieldset>
+		
+		<fieldset>
+		<legend>Brand of Driver:</legend><br>
+		<input type="radio" name="brand"
+		value="callaway">Callaway<br>
+		<input type="radio" name="brand"
+		value="taylormade">TaylorMade<br>
+		<input type="radio" name="brand"
+		value="titleist">Titleist<br>
+		<input type="radio" name="brand"
+		value="mizuno">Mizuno<br>
+		<input type="radio" name="brand"
+		value="cobra">Cobra<br>
+		</fieldset>
+		
+		<fieldset>
+		<legend>Months Commonly Play:</legend><br>
+		<input type="checkbox" name="month"
+		value="january">January<br>
+		<input type="checkbox" name="month"
+		value="february">February<br>
+		<input type="checkbox" name="month"
+		value="march">March<br>
+		<input type="checkbox" name="month"
+		value="april">April<br>
+		<input type="checkbox" name="month"
+		value="may">May<br>
+		<input type="checkbox" name="month"
+		value="june">June<br>
+		<input type="checkbox" name="month"
+		value="july">July<br>
+		<input type="checkbox" name="month"
+		value="august">August<br>
+		<input type="checkbox" name="month"
+		value="september">September<br>
+		<input type="checkbox" name="month"
+		value="october">October<br>
+		<input type="checkbox" name="month"
+		value="november">November<br>
+		<input type="checkbox" name="month"
+		value="december">December<br>
+		</fieldset>
+		
+		<fieldset>
+		<legend>Tee-Off Time:</legend><br>
+		<select name="time" multiple>
+			<option value="earlymorning">0600-0900</option>
+			<option value="latemorning">0900-1100</option>
+			<option value="afternoon">1100-1500</option>
+			<option value="evening">1500 and later</option>
+		</select><br>
+		</fieldset>
+		
+		<fieldset>
+		<legend>Why do you play golf</legend><br>
+		<textarea name="story" rows="20" cols="40"></textarea><br>
+		</fieldset>
+		
+		<fieldset>
+		<legend>Submit Survey</legend>
+		<input type="submit" value="Submit">
+		<input type="reset" value="Reset">
+		</fieldset>	
+				
+		</form>
+	</body>
+</html>
