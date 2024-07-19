@@ -172,7 +172,9 @@ ul.reference {font-size: 1.5vw;
 }
   
 /*For tables*/
-@media only screen and (max-width: 600px) {
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) {
 .col-s-1 {width: 8.33%;}
 .col-s-2 {width: 16.66%;}
 .col-s-3 {width: 25%;}
