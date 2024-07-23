@@ -39,7 +39,7 @@ p {font-size:1.5vw;
 .line {border-right: 2px solid #091834;} 
 
 /*Border disappears when screen size smaller*/
-@media screen and (max-width: 600px){
+@media screen and (max-width: 300px){
 	.line {border-right: none;}
 }
 
@@ -76,7 +76,7 @@ p {font-size:1.5vw;
 .menu .icon{display: none;}
 
 /*Change navbar on screen size*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 300px) {
   .menu a:not(:first-child) {display: none;}
   .menu a.icon {
     float: right;
@@ -84,7 +84,7 @@ p {font-size:1.5vw;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 300px) {
   .menu.responsive {position: relative;}
   .menu.responsive .icon {
     position: absolute;
@@ -246,7 +246,7 @@ p.ad {width:100px;
 
 /*Animation for image continoulsy spinning*/
 img.spin {width: 90%;
-		height: auto%;
+		height: auto;
 		position: relative;
 		animation-name: spinning;
 		animation-duration: 12s;
@@ -260,7 +260,7 @@ aside.scroll {height: 200px;
 			overflow: auto;
 }
 /*Set heigh to auto when screen size is smaller*/
-@media screen and (max-width: 600px){
+@media screen and (max-width: 300px){
 	aside.scroll {height: auto;}
 }
 
