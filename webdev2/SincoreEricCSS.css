@@ -160,9 +160,10 @@ ul.reference {font-size: 1.5vw;
 }
 
 /*Columns for RWD site*/
-.row::after {content: "";
-			display: table;
-			clear: both;
+.row::after {
+content: "";
+display: table;
+clear: both;
 }
 
 /*For Desktop*/
