@@ -165,13 +165,7 @@ ul.reference {font-size: 1.5vw;
 			clear: both;
 }
 
-/* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
-}
-
 /*For Desktop*/
-@media only screen and (min-width: 768px) {
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -184,6 +178,13 @@ ul.reference {font-size: 1.5vw;
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px){
+[class*="col-"] {
+    width: 100%;
+}
 }
 
 /*Border style*/
