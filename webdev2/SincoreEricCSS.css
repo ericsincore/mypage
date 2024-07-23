@@ -38,6 +38,12 @@ p {font-size:1.5vw;
 /*Border between column*/
 .line {border-right: 2px solid #091834;} 
 
+/*Border disappears when screen size smaller*/
+@media screen and (max-width: 600px){
+	.line {border-right: none;}
+}
+
+
 /*Nav Bar Style*/
 .menu {	overflow: hidden;
 		background-color: #448D76;
@@ -68,6 +74,29 @@ p {font-size:1.5vw;
 
 /*Hamburger icon*/
 .menu .icon{display: none;}
+
+/*Change navbar on screen size*/
+@media screen and (max-width: 600px) {
+  .menu a:not(:first-child) {display: none;}
+  .menu a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu.responsive {position: relative;}
+  .menu.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+	.menu.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
 
 /*Style for side bar information*/
 aside {width: 90%;
@@ -101,10 +130,6 @@ footer {font-size:1.2vw;
 	color: #7FBD32;
 	text-align:center;
 	padding: 8px;
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	width: 100%
 }
 
 /*Contact email style in footer*/
@@ -131,13 +156,41 @@ ul.reference {font-size: 1.5vw;
 }
 
 /*Columns for RWD site*/
-.row::after {
-content: "";
-display: table;
-clear: both;
+.row::after {content: "";
+			display: table;
+			clear: both;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+@media{
+[class*="col-"] {
+    width: 100%;
+}
+}
+  
+/*For tablets*/
+@media only screen and (min-width: 600px) {
+.col-s-1 {width: 8.33%;}
+.col-s-2 {width: 16.66%;}
+.col-s-3 {width: 25%;}
+.col-s-4 {width: 33.33%;}
+.col-s-5 {width: 41.66%;}
+.col-s-6 {width: 50%;}
+.col-s-7 {width: 58.33%;}
+.col-s-8 {width: 66.66%;}
+.col-s-9 {width: 75%;}
+.col-s-10 {width: 83.33%;}
+.col-s-11 {width: 91.66%;}
+.col-s-12 {width: 100%;}
 }
 
 /*For Desktop*/
+@media only screen and (min-width: 768px) {
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -150,6 +203,7 @@ clear: both;
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+}
 
 /*Border style*/
 .border {border-style: solid;
@@ -192,7 +246,7 @@ p.ad {width:100px;
 
 /*Animation for image continoulsy spinning*/
 img.spin {width: 90%;
-		height: auto;
+		height: auto%;
 		position: relative;
 		animation-name: spinning;
 		animation-duration: 12s;
@@ -205,6 +259,11 @@ img.spin {width: 90%;
 aside.scroll {height: 200px;
 			overflow: auto;
 }
+/*Set heigh to auto when screen size is smaller*/
+@media screen and (max-width: 600px){
+	aside.scroll {height: auto;}
+}
+
 
 /*Animation for bus moving*/
 img.drive {
@@ -370,45 +429,3 @@ input:valid {
   clear: both;
   display: table;
 }
-
-/*Border disappears when screen size smaller*/
-@media screen and (max-width: 600px){
-	.line {border-right: none;}
-}
-
-/*Change navbar on screen size*/
-@media screen and (max-width: 600px) {
-  .menu a:not(:first-child) {display: none;}
-  .menu a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .menu.responsive {position: relative;}
-  .menu.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-	.menu.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
-/* For mobile phones: */
-@media screen and (max-width: 768px){
-[class*="col-"] {
-    width: 100%;
-}
-}
-
-/*Set heigh to auto when screen size is smaller*/
-@media screen and (max-width: 600px){
-	aside.scroll {height: auto;}
-}
-
-
