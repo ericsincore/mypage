@@ -76,7 +76,7 @@ p {font-size:1.5vw;
 .menu .icon{display: none;}
 
 /*Change navbar on screen size*/
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 600px) {
   .menu a:not(:first-child) {display: none;}
   .menu a.icon {
     float: right;
@@ -84,7 +84,7 @@ p {font-size:1.5vw;
   }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 600px) {
   .menu.responsive {position: relative;}
   .menu.responsive .icon {
     position: absolute;
