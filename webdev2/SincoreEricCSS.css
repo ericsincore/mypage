@@ -167,14 +167,14 @@ ul.reference {font-size: 1.5vw;
 }
 
 /* For mobile phones: */
-@media screen{
+@media{
 [class*="col-"] {
     width: 100%;
 }
 }
   
 /*For tablets*/
-@media screen and (min-width: 600px) {
+@media screen only and (min-width: 600px) {
 .col-s-1 {width: 8.33%;}
 .col-s-2 {width: 16.66%;}
 .col-s-3 {width: 25%;}
@@ -190,7 +190,7 @@ ul.reference {font-size: 1.5vw;
 }
 
 /*For Desktop*/
-@media screen and (min-width: 768px) {
+@media screen only and (min-width: 768px) {
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
