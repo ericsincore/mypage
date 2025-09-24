@@ -8,22 +8,17 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #3a3f4b;
-  color: #f0f0f0;
+  background-color: #f9f9f9;
+  color: #333;
   padding: 1rem;
 }
 
 /* Header */
 header {
-  background-image: 
-	linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(28,28,28,0.8)),
-	url(space.jpg);
-  background-size: cover;
-  background-position: center;
-  color: white;
-  padding: 2rem 1rem;
   text-align: center;
-  text-shadow: 0 0 5px rgba(0,0,0,0.7);
+  padding: 2rem 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
 }
 
 header h1 {
@@ -33,7 +28,7 @@ header h1 {
 
 header p {
   font-size: 1rem;
-  color: white;
+  color: #666;
 }
 
 /* Navigation */
@@ -52,7 +47,7 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #ff7043;
+  color: #0077cc;
   font-weight: bold;
 }
 
@@ -76,7 +71,7 @@ main {
 
 /* Feature Boxes */
 .feature-box {
-  background-color: #ffcc80;
+  background-color: #fff;
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -91,7 +86,7 @@ main {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.5rem 1rem;
-  background-color: #ff7043;
+  background-color: #0077cc;
   color: #fff;
   border-radius: 4px;
   text-decoration: none;
