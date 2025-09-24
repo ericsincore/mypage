@@ -1,50 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="description" content="This is a website for Sincores from Sincores">
-  <meta name="keywords" content="Recipees, Movies, TV Shows">
-  <meta name="author" content="Eric">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Eric's Kitchen & Cinema</title>
-  <link rel="stylesheet" href="index.css">
-</head>
-<body>
-  <header>
-    <h1>Sincore's Site</h1>
-    <p>Recipees & Movies</p>
-  </header>
+/* Base Reset and Typography */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <nav>
-    <ul>
-      <li><a href="recipes.html">Recipes</a></li>
-      <li><a href="movies.html">Movie Reviews</a></li>
-    </ul>
-  </nav>
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #3a3f4b;
+  color: #f0f0f0;
+  padding: 1rem;
+}
 
-  <main>
-    <section class="intro">
-      <h2>Welcome!</h2>
-      <p>This is your go-to spot for delicious recipes and honest movie reviews. Dive in and share your thoughts!</p>
-    </section>
+/* Header */
+header {
+  background-image: 
+	linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(28,28,28,0.8)),
+	url(space.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  text-shadow: 0 0 5px rgba(0,0,0,0.7);
+}
 
-    <section class="features">
-      <div class="feature-box">
-        <h3>🍽️ Explore Recipes</h3>
-        <p>Browse Eric’s favorite dishes, from breakfast to dessert. Got a twist? Suggest it!</p>
-        <a href="recipes.html" class="btn">View Recipes</a>
-      </div>
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
 
-      <div class="feature-box">
-        <h3>🎬 Movie Reviews</h3>
-        <p>Read reviews, rate films, and suggest what Eric should watch next.</p>
-        <a href="movies.html" class="btn">Read Reviews</a>
-      </div>
-    </section>
-  </main>
+header p {
+  font-size: 1rem;
+  color: white;
+}
 
-  <footer>
-    <p>© 2025 Sincore's Site</p>
-  </footer>
-</body>
-</html>
+/* Navigation */
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ff7043;
+  font-weight: bold;
+}
+
+/* Main Content */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Feature Boxes */
+.feature-box {
+  background-color: #ffcc80;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.feature-box h3 {
+  margin-bottom: 1rem;
+}
+
+.feature-box .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #ff7043;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+/* Responsive Layout */
+@media (min-width: 600px) {
+  .features {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .feature-box {
+    flex: 1;
+  }
+}
