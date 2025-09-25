@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sincore's Site</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="This is a website for Sincores from Sincores">
+  <meta name="keywords" content="Recipes, Movies, TV Shows">
+  <meta name="author" content="Eric">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" type="text/css" href="movies.css">
+</head>
+<body>
+  <header>
+    <h1>Sincore's Site</h1>
+    <p>A place for movies and food.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="recipes.html">Recipes</a></li>
+      <li><a href="movies.html">Movie Reviews</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="intro">
+      <h2>Movies</h2>
+      <p>Check out what we've been watching</p>
+    </section>
+
+    <section class="slideshow">
+      <h2>Featured Movies</h2>
+
+      <div class="slideshow-container">
+        <div class="slide"><img src="kpax.jpg" alt="K-PAX Poster"></div>
+        <div class="slide"><img src="interstellar.jpg" alt="Interstellar Poster"></div>
+        <div class="slide"><img src="28yearslater.jpg" alt="28 Years Later Poster"></div>
+
+        <!-- Navigation buttons must be inside the container -->
+        <button class="prev" aria-label="Previous slide">❮</button>
+        <button class="next" aria-label="Next slide">❯</button>
+      </div>
+
+      <!-- JS will create .slideshow-dots directly after the container -->
+    </section>
+
+    <section class="comments">
+      <h2>Join the Discussion</h2>
+      <script src="https://utteranc.es/client.js"
+        repo="ericsincore/mypage"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+      </script>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Sincore's Site</p>
+  </footer>
+
+  <script src="movies.js"></script>
+</body>
+</html>
