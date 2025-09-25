@@ -48,13 +48,24 @@
 
     <section class="comments">
       <h2>Join the Discussion</h2>
-      <script src="https://utteranc.es/client.js"
-        repo="ericsincore/mypage"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-      </script>
+		<form id="comment-form" action="https://formspree.io/f/YOUR_ENDPOINT" method="POST" novalidate>
+		  <label for="name">Name</label>
+		  <input id="name" name="name" type="text" required>
+
+		  <label for="email">Email</label>
+		  <input id="email" name="_replyto" type="email" required>
+
+		  <label for="comment">Comment</label>
+		  <textarea id="comment" name="comment" rows="5" required></textarea>
+
+		  <!-- Honeypot to catch bots -->
+		  <input type="text" name="_gotcha" id="_gotcha" style="display:none" autocomplete="off">
+
+		  <!-- Optional: redirect or success message can be handled by JS -->
+		  <button type="submit">Submit</button>
+		</form>
+
+		<div id="form-result" aria-live="polite"></div>
     </section>
   </main>
 
@@ -63,5 +74,6 @@
   </footer>
 
   <script src="movies.js"></script>
+  <script src="comment-form.js"></script>
 </body>
 </html>
